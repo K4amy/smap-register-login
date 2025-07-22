@@ -25,14 +25,31 @@ public OnGameModeInit()
 
 public OnGameModeExit()
 {
+    mysql_close(connection);
 	return 1;
 }
 
 public OnPlayerConnect(playerid)
 {
+    new Name[MAX_PLAYER_NAME],query[128];
+    GetPlayerName(playerid,Name,sizeof(Name));
+    mysql_format(connection,query,sizeof(query),"SELECT `pName` FROM `players` WHERE `pName` = '%e'",Name);
+    printf("%s",query);
+    mysql_tquery(connection,query,"OnPlayerConnectCheckAcoount","i",playerid);
 	return 1;
 }
-
+forward OnPlayerConnectCheckAcoount(playerid);
+public OnPlayerConnectCheckAcoount(playerid){
+    new nums = cache_num_rows();
+    if(nums > 0){
+        SendClientMessage(playerid,-1,"Account Shoma Dar Database Hast!");
+        return 1;
+    }
+    else{
+        SendClientMessage(playerid,-1,"Account Shoma Dar Database Nist!");
+        return 1;
+    }
+}
 public OnPlayerDisconnect(playerid, reason)
 {
 	return 1;
