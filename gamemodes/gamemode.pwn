@@ -1,27 +1,25 @@
 #include <open.mp>
-
-/*
-     ___      _
-    / __| ___| |_ _  _ _ __
-    \__ \/ -_)  _| || | '_ \
-    |___/\___|\__|\_,_| .__/
-                      |_|
-*/
+#include <a_mysql>
+//include database config
+#include "includes/config_database.pwn"
 
 main()
 {
-	printf(" ");
-	printf("  -------------------------------");
-	printf("  |  My first open.mp gamemode! |");
-	printf("  -------------------------------");
-	printf(" ");
+    print("============================");
+    print("in gamemode ejra shod");
+    print("==== TG : xxNeXus ====");
+    print("============================");
 }
 
 public OnGameModeInit()
 {
-	SetGameModeText("My first open.mp gamemode!");
-	AddPlayerClass(0, 2495.3547, -1688.2319, 13.6774, 351.1646, WEAPON_M4, 500, WEAPON_KNIFE, 1, WEAPON_COLT45, 100);
-	AddStaticVehicle(522, 2493.7583, -1683.6482, 12.9099, 270.8069, -1, -1);
+    connection = mysql_connect(MYSQL_HOST,MYSQL_UZR,MYSQL_PASS,MYSQL_DB);
+    if(mysql_errno(connection) != 0){
+        print("[MYSQL] - database vasel nashod!");
+        return 1;
+    }
+    print("[MYSQL] - database vasel shod!");
+	SetGameModeText("Login And Register System");
 	return 1;
 }
 
@@ -29,14 +27,6 @@ public OnGameModeExit()
 {
 	return 1;
 }
-
-/*
-      ___
-     / __|___ _ __  _ __  ___ _ _
-    | (__/ _ \ '  \| '  \/ _ \ ' \
-     \___\___/_|_|_|_|_|_\___/_||_|
-
-*/
 
 public OnPlayerConnect(playerid)
 {
