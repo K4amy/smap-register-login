@@ -28,3 +28,70 @@
 [7/22/2025 7:28:16 PM] [WARNING] mysql_connect: no password specified
 [7/22/2025 7:52:24 PM] [WARNING] mysql_connect: no password specified
 [7/22/2025 7:53:42 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 8:19:31 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 8:19:50 PM] [ERROR] error #1054 while executing query "SELECT `pNmae` FROM `players` WHERE `pName` = 'xxNeXus'": Unknown column 'pNmae' in 'field list'
+[7/22/2025 8:22:08 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 8:22:22 PM] [ERROR] error #1054 while executing query "SELECT `pNmae` FROM `players` WHERE `pName` = 'xxNeXus'": Unknown column 'pNmae' in 'field list'
+[7/22/2025 8:24:17 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 8:24:26 PM] [ERROR] error #1054 while executing query "SELECT `pNmae` FROM `players` WHERE `pName` = 'xxNeXus'": Unknown column 'pNmae' in 'field list'
+[7/22/2025 8:25:47 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 8:26:03 PM] [ERROR] error #1054 while executing query "SELECT `pNmae` FROM `players` WHERE `pName` = 'xxNeXus'": Unknown column 'pNmae' in 'field list'
+[7/22/2025 8:29:36 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 8:29:46 PM] [ERROR] error #1054 while executing query "SELECT `pNmae` FROM `players` WHERE `pName` = 'xxNeXus'": Unknown column 'pNmae' in 'field list'
+[7/22/2025 8:30:17 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 8:30:29 PM] [ERROR] error #1054 while executing query "SELECT `pNmae` FROM `players` WHERE `pName` = 'xxNeXus'": Unknown column 'pNmae' in 'field list'
+[7/22/2025 8:30:59 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 8:31:12 PM] [ERROR] error #1054 while executing query "SELECT `pNmae` FROM `players` WHERE `pName` = 'xxNeXus'": Unknown column 'pNmae' in 'field list'
+[7/22/2025 8:32:24 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 8:33:02 PM] [ERROR] error #1054 while executing query "SELECT `pNmae` FROM `players` WHERE `pName` = 'xxNeXus'": Unknown column 'pNmae' in 'field list'
+[7/22/2025 8:35:44 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 8:35:55 PM] [ERROR] error #1054 while executing query "SELECT `pNmae` FROM `players` WHERE `pName` = 'xxNeXus'": Unknown column 'pNmae' in 'field list'
+[7/22/2025 8:36:36 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 8:36:45 PM] [ERROR] cache_get_value_name: field 'pPassword' not found
+[7/22/2025 8:36:48 PM] [ERROR] cache_get_value_name: field 'pPassword' not found
+[7/22/2025 8:36:50 PM] [ERROR] cache_get_value_name: field 'pPassword' not found
+[7/22/2025 8:36:53 PM] [ERROR] cache_get_value_name: field 'pPassword' not found
+[7/22/2025 8:38:49 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 8:39:00 PM] [ERROR] cache_get_value_name: field 'pPassword' not found
+[7/22/2025 8:39:02 PM] [ERROR] cache_get_value_name: field 'pPassword' not found
+[7/22/2025 8:39:04 PM] [ERROR] cache_get_value_name: field 'pPassword' not found
+[7/22/2025 8:40:46 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 8:40:58 PM] [ERROR] cache_get_value_name: field 'pPassword' not found
+[7/22/2025 8:43:57 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 8:44:07 PM] [ERROR] cache_get_value_name: field 'pPassword' not found
+[7/22/2025 8:44:10 PM] [ERROR] cache_get_value_name: field 'pPassword' not found
+[7/22/2025 8:51:44 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 8:51:58 PM] [ERROR] cache_get_value_name: field 'pPassword' not found
+[7/22/2025 8:53:57 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 8:54:09 PM] [ERROR] cache_get_value_name: field 'pPassword' not found
+[7/22/2025 8:54:12 PM] [ERROR] cache_get_value_name: field 'pPassword' not found
+[7/22/2025 8:54:48 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 8:54:59 PM] [ERROR] cache_get_value_name: field 'pPassword' not found
+[7/22/2025 8:55:54 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 8:56:04 PM] [ERROR] cache_get_value_name: field 'pPassword' not found
+[7/22/2025 8:56:08 PM] [ERROR] cache_get_value_name: field 'pPassword' not found
+[7/22/2025 8:59:12 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 8:59:21 PM] [ERROR] cache_get_value_name: field 'pPassword' not found
+[7/22/2025 8:59:21 PM] [ERROR] cache_get_value_name_int: field 'pLevel' not found
+[7/22/2025 8:59:24 PM] [ERROR] cache_get_value_name: field 'pPassword' not found
+[7/22/2025 8:59:24 PM] [ERROR] cache_get_value_name_int: field 'pLevel' not found
+[7/22/2025 9:01:58 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 9:02:07 PM] [ERROR] cache_get_value_name: field 'pPassword' not found
+[7/22/2025 9:02:07 PM] [ERROR] cache_get_value_name_int: invalid row index '1' (number of rows: '1')
+[7/22/2025 9:04:16 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 9:04:28 PM] [ERROR] cache_get_value_name_int: field 'pLevel' not found
+[7/22/2025 9:04:33 PM] [ERROR] cache_get_value_name_int: field 'pLevel' not found
+[7/22/2025 9:07:39 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 9:07:46 PM] [ERROR] cache_get_value_name: field 'pPassword' not found
+[7/22/2025 9:09:43 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 9:10:48 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 9:10:55 PM] [ERROR] cache_get_value_name: field 'pPassword' not found
+[7/22/2025 9:14:27 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 9:15:13 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 9:15:22 PM] [ERROR] cache_get_value_name: field 'pPassword' not found
+[7/22/2025 9:17:03 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 9:22:45 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 9:24:19 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 9:25:49 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 9:33:59 PM] [WARNING] mysql_connect: no password specified
+[7/22/2025 9:37:55 PM] [WARNING] mysql_connect: no password specified
