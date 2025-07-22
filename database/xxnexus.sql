@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 22, 2025 at 06:23 PM
+-- Generation Time: Jul 22, 2025 at 08:52 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -30,15 +30,16 @@ SET time_zone = "+00:00";
 CREATE TABLE `players` (
   `pID` int(11) NOT NULL,
   `pName` varchar(24) NOT NULL,
-  `pPassword` varchar(128) NOT NULL
+  `pPassword` varchar(32) NOT NULL,
+  `pLevel` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `players`
 --
 
-INSERT INTO `players` (`pID`, `pName`, `pPassword`) VALUES
-(1, 'xxNeXus', '123456');
+INSERT INTO `players` (`pID`, `pName`, `pPassword`, `pLevel`) VALUES
+(1, 'xxNeXus', 'xxNexus', 44);
 
 --
 -- Indexes for dumped tables

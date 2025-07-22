@@ -59,18 +59,17 @@ public OnPlayerConnectCheckAcoount(playerid)
     new nums = cache_num_rows();
     if (nums > 0)
     {
-        new Name[MAX_PLAYER_NAME], mess[128];
+        new mess[128];
         cache_get_value_name(0, "pPassword", PlayerInfo[playerid][pPassword]);
         printf("ram: '%s'", PlayerInfo[playerid][pPassword]);
-        format(mess, sizeof(mess), "%s Aziz Be Server Khosh omadi! Lotfan Ramz Khod Ra Vared Konid : ", Name);
+        format(mess, sizeof(mess), "%s Aziz Be Server Khosh omadi! Lotfan Ramz Khod Ra Vared Konid : ", PlayerInfo[playerid][pName]);
         ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "Login", mess, BTN_NEXT, BTN_EXIT);
         return 1;
     }
     else
     {
-        new Name[MAX_PLAYER_NAME], mess[128];
-        GetPlayerName(playerid, Name, sizeof(Name));
-        format(mess, sizeof(mess), "%s Aziz! Hesab shoma dar database ma vojud nedard - Lorfan Yek Hesab Besazid\n - Lotfan Yek ramz ghavi entekhab konid \n lotfan ramz shoma bishtar az 6 horuf bashed", Name);
+        new mess[256];
+        format(mess, sizeof(mess), "%s Aziz! Hesab shoma dar database ma vojud nedard - Lorfan Yek Hesab Besazid\n - Lotfan Yek ramz ghavi entekhab konid \n lotfan ramz shoma bishtar az 6 horuf bashed", PlayerInfo[playerid][pName]);
         ShowPlayerDialog(playerid, DIALOG_REGISTER, DIALOG_STYLE_INPUT, "Register", mess, BTN_NEXT, BTN_EXIT);
         return 1;
     }
@@ -256,6 +255,15 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
             ShowPlayerDialog(playerid, DIALOG_REGISTER, DIALOG_STYLE_INPUT, "Register", "Ramz Shoma Nebaid Kamtar az 6 horuf bashed", BTN_NEXT, BTN_EXIT);
             return 1;
         }
+        new query[128];
+        mysql_format(connection, query, sizeof(query), "INSERT INTO `players` (pName,pPassword,pLevel) VALUES ('%e','%e',0)", PlayerInfo[playerid][pName], inputtext);
+        mysql_tquery(connection, query, "", "");
+        // new mess[128];
+        // format(mess, sizeof(mess), "%s Aziz Be Server Khosh omadi! Lotfan Ramz Khod Ra Vared Konid : ", PlayerInfo[playerid][pName]);
+        // ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, "Login", mess, BTN_NEXT, BTN_EXIT);
+        new query2[128];
+        mysql_format(connection, query2, sizeof(query2), "SELECT * FROM `players` WHERE `pName` = '%e'", PlayerInfo[playerid][pName]);
+        mysql_tquery(connection, query2, "OnPlayerConnectCheckAcoount", "i", playerid);
         return 1;
 
 
